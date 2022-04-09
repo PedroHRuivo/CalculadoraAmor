@@ -1,0 +1,36 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      calculadora amorosa
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large"></ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <p>Digite o primeiro nome:</p>
+    <input type="text" name="nome1" [(ngModel)] = "nome1">
+    <p>Digite o segundo nome:</p>
+    <input type="text" name="nome2" [(ngModel)]="nome2">
+    <div>
+    
+      <button type="button" class="btn" (click)="enviarDados()"> Calcular Match
+      </button>
+   
+     <div id="res">
+       Resultado: 
+       <p [class.painel]="calculando" [class.scale-up-center]="!calculando" class="mt-3 text-center" id="res">{{ resultado }} % </p>  <!--{{resultado}}%--></div>
+      <div>{{mensagem}}</div>
+      
+   <img src="{{img}}" >
+
+     </div>
+    </div>
+
+</ion-content>

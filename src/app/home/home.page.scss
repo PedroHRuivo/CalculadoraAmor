@@ -1,0 +1,67 @@
+#container {
+  text-align: center;
+background-color: white ;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+
+ 
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+ 
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+
+  color:gold;
+margin-top: auto;
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+
+}
+.btn {
+  height: 50%;
+  background-color: gold;
+  top: 60%;
+  margin-top: 24%;
+  margin-left: 0%;
+  
+}
+#res{
+  margin-top: 20px;
+}
+.scale-up-center {
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  color: #ffc409;
+}
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+  }
+  100% {
+      -webkit-transform: scale(2);
+      transform: scale(2);
+  }
+}
